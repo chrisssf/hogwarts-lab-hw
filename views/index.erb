@@ -1,0 +1,3 @@
+<% @students.each do |student| %>
+  <p><a href="/students/<%= student.id %>"><%= student.format_name %></a></p>
+<% end %>

@@ -5,10 +5,21 @@ require_relative('models/house')
 also_reload('./models/*')
 
 # index
-
-# show
+get '/students' do
+  @students = Student.all()
+  erb(:index)
+end
 
 # new
+get '/students/new' do
+  erb(:new)
+end
+
+# show
+get '/students/:id' do
+  @student = Student.find(params[:id].to_i)
+  erb(:show)
+end
 
 # create
 
