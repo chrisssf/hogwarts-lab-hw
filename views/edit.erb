@@ -8,7 +8,7 @@
   <label for="house_select">Select House: </label>
   <select name="house_id" id="house_select">
     <% @houses.each do |house| %>
-    <option value="<%= house.id %>"><%= house.name.capitalize %></option>
+    <option value="<%= house.id %>" <% if house.name == @student.house.name %> selected="selected" <% end %>><%= house.name.capitalize %></option>
     <% end %>
   </select>
 
