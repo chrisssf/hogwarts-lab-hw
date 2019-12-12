@@ -34,7 +34,7 @@ a:hover {
 }
 .student {
   border: 5px double;
-  margin: 0 35px 30px 0;  
+  margin: 0 35px 30px 0;
   padding: 25px;
   width: 200px;
   display: inline-block;
@@ -55,3 +55,30 @@ a:hover {
   width: 160px;
   margin: 0 1em 0 0;
 }
+
+.center {
+  text-align: center;
+}
+
+img {
+  margin-bottom: 20px;
+}
+
+.form_margin{
+  margin-bottom: 20px;
+}
+
+select {
+  width: 105px;
+}
+
+/* .button {
+  font-size: 90px;
+  font: 400 90px 'Rye', cursive;
+  width: 200px;
+} */
+
+/* input[type="submit"]{
+  font-size: 90px;
+  padding: 100px;
+} */

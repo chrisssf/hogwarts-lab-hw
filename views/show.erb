@@ -1,7 +1,10 @@
-<h1><%= @student.format_name %></h1>
-<p><%= @student.house().name.capitalize %></p>
-<p><%= @student.age %></p>
-<a href="/students/<%= @student.id %>/edit">Edit student details</a>
-<form class="" action="/students/<%= @student.id %>/death" method="post">
-  <input type="submit" value="Murder!!">
-</form>
+<div class="center">
+  <h1><%= @student.format_name %></h1>
+  <p>Age: <%= @student.age %></p>
+  <p>House: <%= @student.house().name.capitalize %></p>
+  <img src="/<%=@student.house.name%>_logo.png" alt="" width="100"><br>
+  <a href="/students/<%= @student.id %>/edit">Edit student details</a>
+  <form class="" action="/students/<%= @student.id %>/death" method="post">
+    <input type="submit" value="Murder!!">
+  </form>
+</div>
